@@ -34,10 +34,52 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: pp_fraktion_sanslight;
+  font-family: pp_fraktion_sans;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin: 4rem;
+  text-align: center;
+}
+
+#title {
+  font-family: pp_formulalight;
+  font-size: 2.5rem;
+}
+
+#description {
+  font-size: 1.25rem;
+}
+
+#survey-form {
+  padding: 1rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  max-width: 50%;
+}
+
+.form-group input,
+.form-group select {
+  display: block;
+}
+
+.form-group {
+  width: 90%;
 }
